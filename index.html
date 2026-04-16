@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mes projets</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .itemContainer {
+      position: relative;
+      display: inline-block;
+    }
+
+    .moreButton {
+      color: #9ec9f7;
+      background-color: #000;
+      font-size: 18px;
+      padding: 12px 20px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .moreButton:hover {
+      background-color: #1e293b;
+      transform: scale(1.05);
+    }
+
+    .items {
+      list-style: none;
+      position: absolute;
+      top: 110%;
+      left: 0;
+      width: 220px;
+      background-color: #1e293b;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 0;
+      opacity: 0;
+      transform: translateY(-10px);
+      pointer-events: none;
+      transition: 0.3s ease;
+    }
+
+    .itemContainer:hover .items {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .items li {
+      margin: 10px 0;
+    }
+
+    .items li a {
+      text-decoration: none;
+      color: #ccc;
+      display: block;
+      padding: 8px;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .items li a:hover {
+      background-color: #334155;
+      color: #9ec9f7;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .items {
+        width: 180px;
+      }
+    }
+    body {
+  background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+  background-size: cover;
+  background-position: center;
+}
+  </style>
+</head>
+
+<body>
+
+  <h1>🚀 Mes projets frontend</h1>
+
+  <div class="itemContainer">
+    <button class="moreButton">More</button>
+
+    <ol class="items">
+      <li class=" body"><a href="https://room-project-eta.vercel.app/" target="_blank">Room Project</a></li>
+      <li><a href="https://new-597q.vercel.app/" target="_blank">New Sliardigma</a></li>
+      <li><a href="https://asana-hhut.vercel.app/" target="_blank">Asana HHU</a></li>
+      <li><a href="https://resodre-ybli.vercel.app/" target="_blank">Resodre Ybli</a></li>
+      <li><a href="https://figma-2ujl.vercel.app/" target="_blank">Figma </a></li>
+<li><a href="https://khan-academy-virid.vercel.app/" target="_blank">Khan Academy</a></li>
+<li> <a href="https://github.com/moustaphakallo/jutiffy" target="_blank">Jutiffy</a></li>
+<li><a href="https://index-html-yr2m-4rt9as005-moustaphakallos-projects.vercel.app/" target="_blank">Index HTML</a></li>
+<li></li><a href="https://livertions-html.vercel.app/" target="_blank">Ouvrir</a></li>
+    </ol>
+  </div>
+
+</body>
+</html>
